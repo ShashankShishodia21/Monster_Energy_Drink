@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;     
+}
+* {
+   font-family: 'Metal Mania', Times, serif;
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ body {
+    background: url(images/modern-futuristic-technology-minimalist-diagonal-overlapped-geometric-glow-neon-green-in-dark-background-vector.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.navbarWrapper {
+    z-index: 55555;
+    width: 100%;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logoSection {
+    flex: 1;
+    width: 50%;
+}
+
+.logoSection a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: black;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+.logoSection img{
+    width: 8%;
+    height: 90%;
+}
+.menuSection{
+    width: 30%;
+    flex: 1;
+    background: rgb(120, 236, 5 , 0.6);
+    backdrop-filter: blur(6px);
+    padding: 15px 0px;
+    border-radius: 25px;
+}
+.menuList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.ham {
+    color: chartreuse;
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+.hamClose {
+    display: none;
+    color: chartreuse;
+    font-size: 28px;
+    cursor: pointer;
+}
+.menuItem {
+    color: white;
+}
+.menuItem:hover {
+    color: chartreuse;
+    transform: scale(1.2em);
+    transition: 0.3s;
+}
+
+
+@media (max-width: 1150px) {
+    .navbar {
+        width: 96%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbarWrapper {
+        padding: 14px 0px;
+    }
+
+    .logoSection a {
+        font-size: 18px;
+    }
+
+    .menuSection {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+        background: black;
+        animation: drawer 0.5s ease-in-out;
+        box-shadow: -2px 0px 10px rgb(0, 0, 0, 0.2);
+        z-index: 99999;
+        padding: 0px 40px;
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    .hamClose {
+        display: block;
+    }
+    .menuList {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        height: 100%;
+    }
+
+    @keyframes drawer {
+        0% {
+            transform: translateX(300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+.container {
+    font-size: 14px;
+    padding: 40px 28px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-top: 30px;
+        padding: 40px 14px;
+    }
+}
+
+.logoSection span{
+    color: whitesmoke;
+}
+.logoSection p{
+    color: chartreuse;
+    padding: 0px 8px;
+}
+
+.section1{
+    padding-top: 140px;
+}
+.sec1div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.sec1div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 420px;
+    width: 420px;
+    background-color: rgb(120, 236, 5 , 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px black;
+}
+.sec1div2:hover{
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+    transition: 0.5s;
+}
+.sec1div2 img{
+    margin: 0px 0px 70px 0px;
+    z-index: -999;
+    height: 400px;
+    width: 405px;
+    rotate: -30deg;
+}
+/* .sec1div2 img:hover{
+    will-change: transform;
+    transform: perspective(1000px) rotateZ(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+    transition: 0.6s;
+} */
+.sec1div3{
+    border-radius: 25px;
+    background: rgb(0, 0, 0 , 0.6);
+    backdrop-filter: blur(6px);
+    width: 40%;
+    text-align: center;
+    margin: 0px 30px;
+    height: 70%;
+    border: 1px solid chartreuse;
+    box-shadow: 10px 10px 10px black;
+}
+.sec1div3 h1{
+    color: chartreuse;
+    padding: 20px;
+    font-size: 2.2em;
+}
+.sec1div3 p{
+    font-size: 1.5em;
+    padding: 30px 20px;
+    color: whitesmoke;
+    font-weight: 100;
+}
+.sec1div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sec1div4 a{
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.1em;
+    width: 80px;
+}
+.spec1{
+    color: chartreuse;
+    border-radius: 25px;
+    border: 1px solid chartreuse;
+}
+.spec1:hover{
+    color: white;
+    background: chartreuse;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.spec2{
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    background: chartreuse;
+}
+.spec2:hover{
+    color: chartreuse;
+    border-radius: 25px;
+    background: transparent;
+    transform: scale(1.2);
+    transition: 0.5s;
+    border: 1px solid chartreuse;
+}
+.footer{
+    margin-top: 105px;
+    background-color:  black;
+    text-align: center;
+    font-size: 0.6em;
+    padding: 20px;
+    font-weight: 800;
+    letter-spacing: 1px; 
+    color: whitesmoke;  
+}
+.footer span{
+    color: chartreuse;
+}
+.footer i:hover{
+    color: red;
+}
